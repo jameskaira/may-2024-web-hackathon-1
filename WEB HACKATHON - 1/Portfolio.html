@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; background-color: #333;}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.photo {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+</style>
+</head>
+<body class="w3-black">
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="WIN_20240701_11_58_17_Pro.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25%!important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25%!important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25%!important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25%!important">CONTACT</a>
+  </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> James Wainaina.</h1>
+    <p>Student at Meru University, specializing in Mechatronics, and Robotics Team Leader.</p>
+    <img src="WIN_20240701_11_58_17_Pro.jpg" alt="James Wainaina" class="w3-image" width="992" height="1108">
+  </header>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About James Wainaina</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am currently pursuing a Diploma in Mechatronics at Meru University, where my academic journey has been marked by a keen interest in the integration of mechanical engineering, electronics, computer science, and systems control. Beyond academics, I take pride in leading the Robotics team at our university. Our team engages in various projects aimed at innovating solutions through robotics technology. My passion lies in bridging the gap between theoretical knowledge and practical applications, especially in the field of robotics.</p>
+    <p>In addition to my academic pursuits, I have honed my skills in C and C++ programming, applying them to several projects related to the Internet of Things (IoT). These projects have allowed me to explore the potential of IoT in creating smart environments and enhancing connectivity across devices. My experience with IoT has not only deepened my understanding of network communication but also equipped me with the ability to develop efficient and scalable IoT solutions.</p>
+    <p>Currently, I am expanding my skill set by enrolling in a Software Engineering course at PowerLearn. This initiative is part of my broader goal to become a versatile software engineer capable of tackling complex problems and contributing to innovative technological advancements. Through continuous learning and hands-on experience, I aim to leverage my technical skills and leadership abilities to drive meaningful change in the tech industry.</p>
+  </div>
+  
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photos by James Wainaina</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="photos-container">
+      <img src="pic 1.jpg" alt="Photo 1" class="photo">
+      <img src="pic 2.jpg" alt="Photo 2" class="photo">
+      <img src="WhatsApp Image 2024-05-24 at 16.16.10_3bbb30ba.jpg" alt="Photo 3" class="photo">
+      <img src="WIN_20240701_11_58_17_Pro.jpg" alt="Photo 4" class="photo">
+      <img src="WIN_20240701_11_58_47_Pro.jpg" alt="Photo 5" class="photo">
+    </div>
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact James Wainaina</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Nairobi, kenya</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +254 114559809</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kairawainaina8@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
