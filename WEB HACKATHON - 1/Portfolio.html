@@ -1,196 +1,368 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; background-color: #ca1212;}
-.w3-row-padding img {margin-bottom: 12px}
-.w3-sidebar {width: 120px;background: #e62525;}
-#main {margin-left: 120px}
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+        background-color: #ca1212;
+      }
+      .w3-row-padding img {
+        margin-bottom: 12px;
+      }
+      .w3-sidebar {
+        width: 120px;
+        background: #e62525;
+      }
+      #main {
+        margin-left: 120px;
+      }
+      @media only screen and (max-width: 600px) {
+        #main {
+          margin-left: 0;
+        }
+      }
 
-.photos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-}
+      .photos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+      }
 
-.photo {
-  margin: 5px;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
+      .photo {
+        margin: 5px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
 
-/* CSS for the portfolio section */
-.portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+      /* CSS for the portfolio section */
+      .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
 
-.portfolio-item {
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-}
+      .portfolio-item {
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+      }
 
-.portfolio-photo {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-</style>
-</head>
-<body class="w3-black">
+      .portfolio-photo {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body class="w3-black">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <img src="WIN_20240701_11_58_17_Pro.jpg" style="width: 100%" />
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#education"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-graduation-cap w3-xxlarge"></i>
+        <p>EDUCATION</p>
+      </a>
+      <a
+        href="#skills"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-check-square-o w3-xxlarge"></i>
+        <p>SKILLS</p>
+      </a>
+      <a
+        href="#photos"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>PHOTOS</p>
+      </a>
+      <a
+        href="#portfolio"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-briefcase w3-xxlarge"></i>
+        <p>PORTFOLIO</p>
+      </a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
 
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <img src="WIN_20240701_11_58_17_Pro.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-check-square-o w3-xxlarge"></i>
-    <p>SKILLS</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-briefcase w3-xxlarge"></i>
-    <p>PORTFOLIO</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25%!important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25%!important">ABOUT</a>
-    <a href="#skills" class="w3-bar-item w3-button" style="width:25%!important">SKILLS</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25%!important">PHOTOS</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25%!important">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25%!important">CONTACT</a>
-  </div>
-</div>
-
-<div class="w3-padding-large" id="main">
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> James Wainaina.</h1>
-    <p>I am a goal-oriented, knowledge-thirsty individual who is passionate about modern technology and innovation. My insatiable curiosity drives me to continuously learn and adapt, ensuring I stay ahead in the fast-paced tech landscape.With a focus on solving modern problems through innovative solutions, I strive to make a significant impact using cutting-edge technologies.      </p>
-    <img src="IMG-20240703hj.jpg" alt="James Wainaina" class="w3-image" width="full" height="200">
-  </header>
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About </h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>I am currently pursuing a Diploma in Mechatronics at Meru University, where my academic journey has been marked by a keen interest in the integration of mechanical engineering, electronics, computer science, and systems control. Beyond academics, I take pride in leading the Robotics team at our university. Our team engages in various projects aimed at innovating solutions through robotics technology. My passion lies in bridging the gap between theoretical knowledge and practical applications, especially in the field of robotics.</p>
-    <p>In addition to my academic pursuits, I have honed my skills in C and C++ programming, applying them to several projects related to the Internet of Things (IoT). These projects have allowed me to explore the potential of IoT in creating smart environments and enhancing connectivity across devices. My experience with IoT has not only deepened my understanding of network communication but also equipped me with the ability to develop efficient and scalable IoT solutions.</p>
-    <p>Currently, I am expanding my skill set by enrolling in a Software Engineering course at PowerLearn. This initiative is part of my broader goal to become a versatile software engineer capable of tackling complex problems and contributing to innovative technological advancements. Through continuous learning and hands-on experience, I aim to leverage my technical skills and leadership abilities to drive meaningful change in the tech industry.</p>
-    
-    <table class="w3-table w3-striped w3-bordered w3-card">
-      <thead>
-        <tr class="w3-dark-grey">
-          <th scope="col">School</th>
-          <th scope="col">Years Attended</th>
-          <th scope="col">Grade/Award</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Meru University</td>
-          <td>Current Enrollment</td>
-          
-        </tr>
-        <tr>
-          <td>Gathiruini Boys High School</td>
-          <td>2018 - 2021</td>
-          <td>B</td>
-          
-        </tr>
-        <tr>
-          <td>Mugutha Primary School</td>
-          <td>2009 - 2017</td>
-          <td>320</td>
-        
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  </div>
-
-  <div class="w3-padding-64 w3-content" id="skills">
-    <h2 class="w3-text-light-grey">Skills</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <ul class="w3-ul w3-hoverable">
-      <li class="w3-padding-16">Electrical Installation</li>
-      <li class="w3-padding-16">C Programming</li>
-      <li class="w3-padding-16">C++ Programming</li>
-      <li class="w3-padding-16">Python Programming</li>
-      <li class="w3-padding-16">Internet of Things (IoT)</li>
-      <li class="w3-padding-16">Robotics Projects</li>
-    </ul>
-  </div>
-
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="photos-container">
-      <img src="pic 1.jpg" alt="Photo 1" class="photo">
-      <img src="PIC 2.jpg" alt="Photo 2" class="photo">
-      <img src="pic 3.jpg" alt="Photo 3" class="photo">
-      <img src="WIN_20240701_11_58_17_Pro.jpg" alt="Photo 4" class="photo">
-      <img src="WhatsApp Image 2024-05-24 at 16.16.10_3bbb30ba.jpg" alt="Photo 5" class="photo">
-    </div>
-  </div>
-
-  
-  <div class="w3-padding-64 w3-content" id="portfolio">
-    <h2 class="w3-text-light-grey">Portfolio</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="portfolio-container">
-      <div class="portfolio-item">
-        <h3>Project and event </h3>
-        <p></p>
-        <a href="roboken 2024.mp4" target="_blank">Attended 2024 roboken competition as a group </a><br>
-        <a href="WhatsApp Video 2024-06-07 at 12.43.57_fed99cc2.mp4" target="_blank">Attended 2024 demo 2 </a><br>
-        <a href="VID_20240316_000140.mp4" target="_blank"> HACK NIGHT IN OUR SCHOOL</a><br>
-       <a href="VID_20240316_000156.mp4" target="_blank">IOT WORKSHOP</a>
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#education"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >EDUCATION</a
+        >
+        <a
+          href="#skills"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >SKILLS</a
+        >
+        <a
+          href="#photos"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >PHOTOS</a
+        >
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >CONTACT</a
+        >
       </div>
     </div>
-  </div>
 
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Nairobi, Kenya</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +254 114559809</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kairawainaina8@gmail.com</p>
-      <p><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/james-kaira-31331a291/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BmT4OJ0DWTfegq3O7Focy%2Bw%3D%3D" target="_blank">LinkedIn</a></p>
-      <p><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://www.instagram.com/james_wainaina/" target="_blank">Instagram</a></p>
-      <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://github.com/jameskaira" target="_blank">GitHub</a></p>
+    <div class="w3-padding-large" id="main">
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">I'm</span> James Wainaina.
+        </h1>
+        <p>
+          I am a goal-oriented, knowledge-thirsty individual who is passionate
+          about modern technology and innovation. My insatiable curiosity drives
+          me to continuously learn and adapt, ensuring I stay ahead in the
+          fast-paced tech landscape.With a focus on solving modern problems
+          through innovative solutions, I strive to make a significant impact
+          using cutting-edge technologies.
+        </p>
+        <img
+          src="IMG-20240703hj.jpg"
+          alt="James Wainaina"
+          class="w3-image"
+          width="full"
+          height="200"
+        />
+      </header>
+
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>
+          I am currently pursuing a Diploma in Mechatronics at Meru University,
+          where my academic journey has been marked by a keen interest in the
+          integration of mechanical engineering, electronics, computer science,
+          and systems control. Beyond academics, I take pride in leading the
+          Robotics team at our university. Our team engages in various projects
+          aimed at innovating solutions through robotics technology. My passion
+          lies in bridging the gap between theoretical knowledge and practical
+          applications, especially in the field of robotics.
+        </p>
+        <p>
+          In addition to my academic pursuits, I have honed my skills in C and
+          C++ programming, applying them to several projects related to the
+          Internet of Things (IoT). These projects have allowed me to explore
+          the potential of IoT in creating smart environments and enhancing
+          connectivity across devices. My experience with IoT has not only
+          deepened my understanding of network communication but also equipped
+          me with the ability to develop efficient and scalable IoT solutions.
+        </p>
+        <p>
+          Currently, I am expanding my skill set by enrolling in a Software
+          Engineering course at PowerLearn. This initiative is part of my
+          broader goal to become a versatile software engineer capable of
+          tackling complex problems and contributing to innovative technological
+          advancements. Through continuous learning and hands-on experience, I
+          aim to leverage my technical skills and leadership abilities to drive
+          meaningful change in the tech industry.
+        </p>
+
+        <div class="w3-padding-64 w3-content" id="education">
+          <h2 class="w3-text-light-grey">Education</h2>
+          <hr style="width: 200px" class="w3-opacity" />
+          <table class="w3-table w3-striped w3-bordered w3-card">
+            <thead>
+              <tr class="w3-dark-grey">
+                <th scope="col">Institution</th>
+                <th scope="col">Years Attended</th>
+                <th scope="col">Grade/Award</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Meru University</td>
+                <td>Current Enrollment</td>
+              </tr>
+              <tr>
+                <td>Gathiruini Boys High School</td>
+                <td>2018 - 2021</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>Mugutha Primary School</td>
+                <td>2009 - 2017</td>
+                <td>320</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="w3-padding-64 w3-content" id="skills">
+        <h2 class="w3-text-light-grey">Skills</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">Electrical Installation</li>
+          <li class="w3-padding-16">C Programming</li>
+          <li class="w3-padding-16">C++ Programming</li>
+          <li class="w3-padding-16">Python Programming</li>
+          <li class="w3-padding-16">Internet of Things (IoT)</li>
+          <li class="w3-padding-16">Robotics Projects</li>
+        </ul>
+      </div>
+
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">Photos</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="photos-container">
+          <img src="pic 1.jpg" alt="Photo 1" class="photo" />
+          <img src="PIC 2.jpg" alt="Photo 2" class="photo" />
+          <img src="pic 3.jpg" alt="Photo 3" class="photo" />
+          <img
+            src="WIN_20240701_11_58_17_Pro.jpg"
+            alt="Photo 4"
+            class="photo"
+          />
+          <img
+            src="WhatsApp Image 2024-05-24 at 16.16.10_3bbb30ba.jpg"
+            alt="Photo 5"
+            class="photo"
+          />
+        </div>
+      </div>
+
+      <div class="w3-padding-64 w3-content" id="portfolio">
+        <h2 class="w3-text-light-grey">Portfolio</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <h3>Project and event</h3>
+            <p></p>
+            <a href="roboken 2024.mp4" target="_blank"
+              >Attended 2024 roboken competition as a group </a
+            ><br />
+            <a
+              href="WhatsApp Video 2024-06-07 at 12.43.57_fed99cc2.mp4"
+              target="_blank"
+              >Attended 2024 demo 2 </a
+            ><br />
+            <a href="VID_20240316_000140.mp4" target="_blank">
+              HACK NIGHT IN OUR SCHOOL</a
+            ><br />
+            <a href="VID_20240316_000156.mp4" target="_blank">IOT WORKSHOP</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <div class="w3-section">
+          <p>
+            <i
+              class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Nairobi, Kenya
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone: +254 114559809
+          </p>
+          <p>
+            <i
+              class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            >
+            </i>
+            Email: kairawainaina8@gmail.com
+          </p>
+          <p>
+            <i
+              class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            <a
+              href="https://www.linkedin.com/in/james-kaira-31331a291/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BmT4OJ0DWTfegq3O7Focy%2Bw%3D%3D"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+          <p>
+            <i
+              class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            <a href="https://www.instagram.com/james_wainaina/" target="_blank"
+              >Instagram</a
+            >
+          </p>
+          <p>
+            <i
+              class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            <a href="https://github.com/jameskaira" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
